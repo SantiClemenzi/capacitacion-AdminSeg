@@ -4,6 +4,7 @@ namespace App\Form;
 
 use App\Entity\ProductCategory;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -14,7 +15,7 @@ class ProductCategoryType extends AbstractType
         $builder
             ->add('name')
             ->add('code')
-            ->add('product')
+            ->add('submit', type: SubmitType::class)
         ;
     }
 

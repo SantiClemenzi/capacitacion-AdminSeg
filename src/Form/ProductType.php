@@ -14,6 +14,7 @@ class ProductType extends AbstractType
         $builder
             ->add('name')
             ->add('code')
+            ->add('submit', type: SubmitType::class)
         ;
     }
 
